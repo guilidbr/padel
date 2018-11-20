@@ -1,16 +1,39 @@
+import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { ErrorHandler, NgModule } from '@angular/core';
-import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
-import { SplashScreen } from '@ionic-native/splash-screen';
-import { StatusBar } from '@ionic-native/status-bar';
-
+import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
-import { HomePage } from '../pages/home/home';
+import { FeedPage } from '../pages/feed/feed';
+import { MinhasReservasPage } from '../pages/minhas-reservas/minhas-reservas';
+import { QuadrasPrXimasPage } from '../pages/quadras-pr-ximas/quadras-pr-ximas';
+import { MeuPerfilPage } from '../pages/meu-perfil/meu-perfil';
+import { MenuPage } from '../pages/menu/menu';
+import { ConfiguraEsPage } from '../pages/configura-es/configura-es';
+import { AmigosPage } from '../pages/amigos/amigos';
+import { RankignPage } from '../pages/rankign/rankign';
+import { SobrePage } from '../pages/sobre/sobre';
+import { TabsControllerPage } from '../pages/tabs-controller/tabs-controller';
+import { LoginPage } from '../pages/login/login';
+import { SignupPage } from '../pages/signup/signup';
+
+
+import { StatusBar } from '@ionic-native/status-bar';
+import { SplashScreen } from '@ionic-native/splash-screen';
 
 @NgModule({
   declarations: [
     MyApp,
-    HomePage
+    FeedPage,
+    MinhasReservasPage,
+    QuadrasPrXimasPage,
+    MeuPerfilPage,
+    MenuPage,
+    ConfiguraEsPage,
+    AmigosPage,
+    RankignPage,
+    SobrePage,
+    TabsControllerPage,
+    LoginPage,
+    SignupPage
   ],
   imports: [
     BrowserModule,
@@ -19,7 +42,18 @@ import { HomePage } from '../pages/home/home';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    FeedPage,
+    MinhasReservasPage,
+    QuadrasPrXimasPage,
+    MeuPerfilPage,
+    MenuPage,
+    ConfiguraEsPage,
+    AmigosPage,
+    RankignPage,
+    SobrePage,
+    TabsControllerPage,
+    LoginPage,
+    SignupPage
   ],
   providers: [
     StatusBar,
