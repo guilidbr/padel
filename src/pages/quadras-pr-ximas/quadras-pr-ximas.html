@@ -6,7 +6,7 @@
   </ion-navbar>
 </ion-header>
 <ion-content  padding id="page4">
-  <ion-list *ngFor='let quadra of quadras' id="quadrasPrXimas-list4">
+  <ion-list *ngFor='let quadra of quadras' (click)="selecionaQuadra(quadra)" id="quadrasPrXimas-list4">
     <ion-item color="none" id="quadrasPrXimas-list-item7">
       <ion-thumbnail item-left>
         <img />

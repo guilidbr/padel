@@ -1,5 +1,7 @@
 {
   "name": "padel",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "ionic-angular"
 }

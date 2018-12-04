@@ -32,8 +32,10 @@ export class SignupPage {
     this.http.post(link, data)
     .subscribe( data => {
       this.data.response = data._body;
-      if(this.data.response == "sucesso"){
+      if(this.data.response == 1){
         this.navCtrl.push(QuadrasPrXimasPage)
+      }else{
+        console.log(this.data.response);
       }
     }, error =>{
       console.log("Ocorreu algum erro! "+ this.data.response);

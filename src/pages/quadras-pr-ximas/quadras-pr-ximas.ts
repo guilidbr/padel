@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { NavController, LoadingController, AlertController } from 'ionic-angular';
 import { Quadra } from '../../domain/quadra/quadra';
 import { Http } from '@angular/http';
-
+import { QuadraPage } from '../quadra/quadra'
 @Component({
   selector: 'page-quadras-pr-ximas',
   templateUrl: 'quadras-pr-ximas.html'
@@ -41,5 +41,7 @@ export class QuadrasPrXimasPage {
   }
   selecionaQuadra(quadra){
     console.log('Entrou na Action selecionada');
+    //passa para a nova pagina a quadra selecionada
+    this.navCtrl.push(QuadraPage, { quadraSelecionada: quadra });
   }
 }

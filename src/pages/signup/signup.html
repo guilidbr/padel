@@ -12,19 +12,19 @@
         <ion-label>
           Name
         </ion-label>
-        <ion-input type="text" placeholder=""></ion-input>
+        <ion-input type="text" [(ngModel)]="usuairo.nome" name="nome" placeholder=""></ion-input>
       </ion-item>
       <ion-item id="signup-input4">
         <ion-label>
           Email
         </ion-label>
-        <ion-input type="email" placeholder=""></ion-input>
+        <ion-input type="email" [(ngModel)]="usuairo.email" name="email" placeholder=""></ion-input>
       </ion-item>
       <ion-item id="signup-input5">
         <ion-label>
           Password
         </ion-label>
-        <ion-input type="text" placeholder=""></ion-input>
+        <ion-input type="password" [(ngModel)]="usuairo.password" name="password" placeholder=""></ion-input>
       </ion-item>
     </ion-list>
     <button id="signup-button5" (click)="submit()" ion-button color="positive" block>

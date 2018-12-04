@@ -21,6 +21,7 @@ import { HttpModule } from '@angular/http';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { QuadraPage } from '../pages/quadra/quadra';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     SobrePage,
     TabsControllerPage,
     LoginPage,
-    SignupPage
+    SignupPage,
+    QuadraPage
   ],
   imports: [
     BrowserModule,
@@ -57,7 +59,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     SobrePage,
     TabsControllerPage,
     LoginPage,
-    SignupPage
+    SignupPage,
+    QuadraPage
   ],
   providers: [
     StatusBar,
